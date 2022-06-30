@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Ledger-CLI</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/serif.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,25 +16,101 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+				<section>
+                    <h1>Ledger-CLI</h1>
+                    <h2>用極簡記帳捶破資本主義高牆</h2>
+                </section>
+                <section data-markdown>
+                    * 為什麼使用 Ledger？ 2min
+                    * Ledger intro 4min
+                        * double-entry accounting 2min
+                        * 簡單使用範例 2min
+                    * 如何用 Ledger 整合多資產 6min
+                        * 自定資產類型 1min
+                        * 自動取得線上報價 4min
+                        * 記錄交易盈虧 1min
+                    * 使用技巧分享 4min
+                        * 如何在手機編輯帳本
+                        * 如何記錄日常開銷
+                </section>
+                <section>
+                    <section>
+                        <h3>市面上的記帳軟體</h3>
+                        <ul>
+                            <li>記帳太繁瑣，無法堅持</li>
+                            <li>專有軟體，不能自己擴展</li>
+                            <li>多種資產，無法全部一起管理</li>
+                            <li>沒有隱私</li>
+                            <li>界面複雜，不便操作</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Ledger CLI</h3>
+                        <ul>
+                            <li>自由軟體</li>
+                            <li>支援任意資產：
+                                <ul><li>股票、Crypto、健身器材（？）</li></ul>
+                            </li>
+                            <li>純文字記帳，開 VIM 就能寫</li>
+                            <li>指令操作，簡單易用</li>
+                            <li>簡單格式，容易擴展</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Double-Entry Bookkeeping</h3>
+                        <h3>複式簿記</h3>
+                        <p>不只是「收入」和「支出」</p>
+                        <p class='r-fit-text fragment'>記錄「金錢的流動」</p>
+                    </section>
+                    <section>
+                        <p>任一筆交易，都是兩個帳戶之間的轉移</p>
+                        <p>全部的淨值加總<strong>必須為 0</strong></p>
+                        <p>表現更複雜的資產流動</p>
+                        <p>ex: 買賣股票</p>
+                        <p>不能單純的歸類為收入/支出</p>
+                        <p>進而影響投資心態</p>
+                    </section>
+                    <section>
+                        <h3>帳戶慣例（如 GNU Cash）</h3>
+                        <p> Assets - Liabilities<strong class="fragment" data-fragment-index="1"> + Income - Expenses</strong> = Equity
+                        <h3 class="fragment" data-fragment-index="2">Ledger</h3>
+                        <p class="fragment" data-fragment-index="2"><mark>Income</mark> + Expenses + Assets + <mark>Liabilities</mark> + <mark>Equity</mark> = 0
+                        <p class="fragment" data-fragment-index="2"><mark>黃字</mark>代表錢流出到其他帳戶，為負號</p>
+                    </section>
+                    <section>
+                        <h3>記帳就像寫日記一樣簡單</h3>
+                        <p>買衣服</p>
+                        <pre><code data-trim data-noescape>
+2022/06/30 * UNIQLO
+    Expenses:Clothes    $2800
+    Assets:Checking     <strong class="fragment fade-out">-$2800</strong>
+                        </code></pre>
+                        <p>發薪水</p>
+                        <pre><code data-trim data-noescape>
+2022/06/30 * Salary
+    Assets:Savings      $30000
+    Income:Salary       <strong class="fragment fade-out">-$30000</strong>
+                        </code></pre>
+                </section>
+            </div>
+        </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                            hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+                            // Learn about plugins: https://revealjs.com/plugins/
+                            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+                        });
+        </script>
+    </body>
 </html>
