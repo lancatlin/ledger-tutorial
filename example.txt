@@ -3,8 +3,6 @@ commodity BTC
 
 2022/06/27 * Opening balance
     Assets:Savings      = $50,000
-    Assets:USD          = 1000 USD
-    Assets:Crypto:BTC   = 0.01000 BTC
     Assets:Checking     = $4,000
     Equity:Opening balance
 
@@ -24,6 +22,15 @@ commodity BTC
     Expenses:Restaurant     $200
     Expenses:Cash
 
+2022/07/09 * 對帳
+    Assets:Checking     = $4000
+    Expenses:Orphan
+
+2022/07/10 * Opening balance
+    Assets:USD          = 1000 USD
+    Assets:Crypto:BTC   = 0.01000 BTC
+    Equity:Opening balance
+
 2022/07/10 * LikeCoin
     Assets:Crypto:LIKE      100,000 LIKE @ 0.002 USD
     ; 用一顆 LIKE 0.002 USD 的價格買 100,000 顆
@@ -42,3 +49,21 @@ commodity BTC
     ; 用 0.002 USD 買入，用 0.02 賣出
     Assets:USD              1000 USD
     Income:Gains
+
+2022/09/10 * TLM103
+    ; 麥克風
+    Inventory:Recording         1 "TLM103" @ $ 26500
+    Assets:Savings
+
+2022/09/01 Roland FA-06
+    ; 合成器
+    Inventory:Recording         1 "FA-06" @ $ 27000
+    Assets:Savings
+
+2022/09/29 Home Gym
+    Inventory:HomeGym           1 "REP AB3000" @@ $ 5000 ; 健身椅
+    Inventory:HomeGym           2 "NUO 232" @@ $ 15000 ; 可調式啞鈴
+    Inventory:HomeGym           20 地墊 @ $ 220
+    Expenses:Fees               $ 15
+    Assets:Savings              $ -24415
+

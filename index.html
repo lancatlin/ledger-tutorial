@@ -21,18 +21,11 @@
                     <h2>用極簡記帳捶破資本主義高牆</h2>
                 </section>
                 <section data-markdown>
-                    * 為什麼使用 Ledger？ 2min
-                    * Ledger intro 4min
-                        * double-entry accounting 2min
-                        * 簡單使用範例 2min
-                    * 如何用 Ledger 整合多資產 6min
-                        * 自定資產類型 1min
-                        * 自動取得線上報價 4min
-                        * 記錄交易盈虧 1min
-                    * Ledger 如何改變你的金錢態度
-                    * 使用技巧分享 4min
-                        * 如何在手機編輯帳本
-                        * 如何記錄日常開銷
+                    * 為什麼使用 Ledger？
+                    * 複式記帳
+                    * Ledger 基礎
+                    * Ledger 整合多資產
+                    * Ledger 如何改變你的金錢觀
                 </section>
                 <section>
                     <h4>Why Ledger</h4>
@@ -61,6 +54,7 @@
                     </section>
                     <section>
                         <h3>為什麼不用圖型介面？</h3>
+                        <p>vs GNUCash</p>
                         <ul>
                             <li>小、速度快（1.3MB）</li>
                             <li>簡化操作</li>
@@ -89,7 +83,7 @@
                         <h3>帳戶慣例（如 GNU Cash）</h3>
                         <p> Assets - Liabilities<strong class="fragment" data-fragment-index="1"> + Income - Expenses</strong> = Equity
                         <h3 class="fragment" data-fragment-index="2">Ledger</h3>
-                        <p class="fragment" data-fragment-index="2"><mark>Income</mark> + Expenses + Assets + <mark>Liabilities</mark> + <mark>Equity</mark> = 0
+                        <p class="fragment" data-fragment-index="2">Assets + <mark>Liabilities</mark> + <mark>Income</mark> + Expenses + <mark>Equity</mark> = 0
                         <p class="fragment" data-fragment-index="2"><mark>黃字</mark>代表錢流出到其他帳戶，為負號</p>
                     </section>
                     <section>
@@ -114,12 +108,25 @@
                     </section>
                 </section>
                 <section>
-                    <h4>Ledger 基本指令</h4>
+                    <h4>Ledger 基礎</h4>
                     <section>
                         <h3>balance [Account]</h3>
                         <p>查看帳戶餘額</p>
                         <h3>register [Account]</h3>
                         <p>查看每筆記錄</p>
+                    </section>
+                    <section data-markdown>
+                        ### balance
+```
+  $ 54,200  Assets
+   $ 4,200    Checking
+  $ 50,000    Savings
+ $ -54,000  Equity:Opening balance
+   $ 1,800  Expenses
+   $ 1,000    Cash
+     $ 800    Clothes
+  $ -2,000  Income:Salary
+```
                     </section>
                     <section>
                         <h3>register</h3>
@@ -130,9 +137,42 @@
                                  Assets:Checking                    $-800             0
 22-Jul-05 現金消費               Expenses:Cash                     $1,000        $1,000
                                  Assets:Checking                  $-1,000             0
-22-Jul-08 餐廳                   Expenses:Restaurant                 $300          $300
-                                 Expenses:Cash                      $-300             0        
+22-Jul-08 餐廳                   Expenses:Restaurant                 $200          $200
+                                 Expenses:Cash                      $-200             0        
                         </code></pre>
+                    </section>
+                    <section>
+                        <h3>如何在手機上記帳</h3>
+                        <p>ledger 無手機版</p>
+                        <p>只要能打字就能記帳</p>
+                        <p>Nextcloud Notes 同步帳本</p>
+                    </section>
+                    <section data-markdown>
+                        ### 如何簡單記錄日常開銷
+```
+2022/07/05 * 現金消費
+    Expenses:Cash       $1000
+    Assets:Checking
+
+2022/07/08 * 餐廳
+    Expenses:Restaurant     $200
+    Expenses:Cash
+```
+                        拿到錢包的當下就當作已經花掉了
+                        
+                        只需記錄提款，特別重要的消費再手動記錄
+                    </section>
+                    <section data-markdown>
+                        ### 定期對帳，保持同步
+```
+2022/07/09 * 對帳
+    Assets:Checking     = $4000
+    Expenses:Orphan
+```
+```
+Assets:Checking                   $ -200
+Expenses:Orphan                    $ 200
+```
                     </section>
                 </section>
                 <section>
@@ -169,12 +209,12 @@ LIKE:LIKE-USD
                     <section>
                         <p>prices.db</p>
                         <pre><code data-trim>
-P 2022-07-19 11:49:25 BTC 22138.318000 USD
-P 2022-07-19 11:49:25 ETH 1535.553200 USD
-P 2022-07-19 11:49:25 LIKE 0.001834 USD
-P 2022-07-19 11:49:25 台積電 490.000000 $
-P 2022-07-19 11:49:25 元大 5.960000 $
-P 2022-07-19 11:49:25 USD 29.928000 $
+P 2022-07-20 09:54:45 ETH 1544.861600 USD
+P 2022-07-20 09:54:45 LIKE 0.001932 USD
+P 2022-07-20 09:54:45 台積電 499.500000 $
+P 2022-07-20 09:54:45 元大 115.850000 $
+P 2022-07-20 09:54:45 USD 29.876000 $
+P 2022-07-20 09:54:45 BTC 23295.271000 USD
                         </code></pre>
                     </section>
                     <section data-markdown>
@@ -253,6 +293,93 @@ Income:Gains              -900 USD
                         ```
                     </section>
                 </section>
+                <section>
+                    <h4>Ledger 如何改變你的金錢觀</h4>
+                    <section>
+                        <h3>Expenses vs Investment</h3>
+                        <h3>支出 vs 投資</h3>
+                    </section>
+                    <section data-markdown>
+                        什麼是支出？  
+                        什麼是投資？  
+
+                        每個人對金錢最核心的價值觀
+                    </section>
+                    <section data-markdown>
+                        ### 資產 $\neq$ 錢
+                        
+                        對資產定義狹隘，會讓你越來越依賴金錢
+                    </section>
+                    <section>
+                        <p>金錢的目的是有一天不再需要金錢</p>
+                        <h3>累積自己的「資產」</h3>
+                    </section>
+                    <section data-markdown>
+                        ### 我對投資的定義
+                        * 不會隨時間快速貶值
+                        * 有二級市場
+                        * 需要時能換成其他資產
+                    </section>
+                    <section data-markdown>
+                        ```
+2021/09/10 * TLM103
+    ; 麥克風
+    Inventory:Recording         1 "TLM103" @ $ 26500
+    Assets:Savings
+
+2021/09/01 Roland FA-06
+    ; 合成器
+    Inventory:Recording         1 "FA-06" @ $ 27000
+    Assets:Savings
+
+2022/05/29 Home Gym
+    Inventory:HomeGym           1 "REP AB3000" @@ $ 5000 ; 健身椅
+    Inventory:HomeGym           2 "NUO 232" @@ $ 15000 ; 可調式啞鈴
+    Inventory:HomeGym           20 地墊 @ $ 220
+    Expenses:Fees               $ 15
+    Assets:Savings              $ -24415
+                        ```
+                    </section>
+                    <section data-markdown>
+                        查看自己現有資產
+                        ```
+                        ledger balance Inventory --flat
+                        ```
+                        ```
+         2 "NUO 232"
+      1 "REP AB3000"
+             20 地墊  Inventory:HomeGym
+             1 FA-06
+            1 TLM103  Inventory:Recording
+                        ```
+                        查看資產投資總值
+                        ```
+                        ledger balance Inventory -X $
+                        ```
+                        ```
+            $ 77,900  Inventory
+            $ 24,400    HomeGym
+            $ 53,500    Recording
+                        ```
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        累積真正的資產
+
+                        離開資本的輪迴
+
+                        Thank you for listening!
+                    </section>
+                    <section data-markdown>
+                        ### 附錄
+                        * [投影片](https://lancatlin.github.io/ledger-tutorial/)
+                        * [投影片原始碼與範例](https://github.com/lancatlin/ledger-tutorial)
+                        * [自動線上報價腳本](https://github.com/lancatlin/ledger-quotes-updater)
+                        * [Ledger 官網](https://www.ledger-cli.org/)
+                        * [Ledger Manual](https://www.ledger-cli.org/3.0/doc/ledger3.html)
+                    </section>
+                </section>
             </div>
         </div>
 
@@ -260,6 +387,7 @@ Income:Gains              -900 USD
         <script src="plugin/notes/notes.js"></script>
         <script src="plugin/markdown/markdown.js"></script>
         <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
         <script>
             // More info about initialization & config:
             // - https://revealjs.com/initialization/
@@ -267,8 +395,9 @@ Income:Gains              -900 USD
             Reveal.initialize({
                             hash: true,
 
+                            slideNumber: 'c/t',
                             // Learn about plugins: https://revealjs.com/plugins/ RevealHighlight, 
-                            plugins: [ RevealMarkdown, RevealNotes ]
+                            plugins: [ RevealMarkdown, RevealNotes, RevealMath.KaTeX ]
                         });
         </script>
     </body>
