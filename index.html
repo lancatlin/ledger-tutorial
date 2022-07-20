@@ -29,19 +29,21 @@
                         * 自定資產類型 1min
                         * 自動取得線上報價 4min
                         * 記錄交易盈虧 1min
+                    * Ledger 如何改變你的金錢態度
                     * 使用技巧分享 4min
                         * 如何在手機編輯帳本
                         * 如何記錄日常開銷
                 </section>
                 <section>
+                    <h4>Why Ledger</h4>
                     <section>
                         <h3>市面上的記帳軟體</h3>
                         <ul>
-                            <li>記帳太繁瑣，無法堅持</li>
                             <li>專有軟體，不能自己擴展</li>
                             <li>多種資產，無法全部一起管理</li>
                             <li>沒有隱私</li>
                             <li>界面複雜，不便操作</li>
+                            <li><strong>記帳太繁瑣，無法堅持</strong></li>
                         </ul>
                     </section>
                     <section>
@@ -57,8 +59,18 @@
                             <li>簡單格式，容易擴展</li>
                         </ul>
                     </section>
+                    <section>
+                        <h3>為什麼不用圖型介面？</h3>
+                        <ul>
+                            <li>小、速度快（1.3MB）</li>
+                            <li>簡化操作</li>
+                            <li>客製化</li>
+                            <li>容易擴展、串接</li>
+                        </ul>
+                    </section>
                 </section>
                 <section>
+                    <h4>複式記帳</h4>
                     <section>
                         <h3>Double-Entry Bookkeeping</h3>
                         <h3>複式簿記</h3>
@@ -88,15 +100,15 @@
                         <h3>記帳就像寫日記一樣簡單</h3>
                         <p>買衣服</p>
                         <pre><code data-trim data-noescape>
-2022/06/30 * UNIQLO
-    Expenses:Clothes    $2800 ; 兩件襯衫、一件牛仔褲、一件外套
-    Assets:Checking     <strong class="fragment fade-out">-$2800</strong>
+2022/06/30 * 買衣服
+    Expenses:Clothes    $800
+    Assets:Checking     <strong class="fragment fade-out">-$800</strong>
                         </code></pre>
                         <p>發薪水</p>
                         <pre><code data-trim data-noescape>
-2022/06/30 * 公司發薪水
-    Assets:Savings      $30000
-    Income:Salary       <strong class="fragment fade-out">-$30000</strong>
+2022/06/30 * 打工
+    Assets:Savings      $2000
+    Income:Salary       <strong class="fragment fade-out">-$2000</strong>
                         </code></pre>
                         <p>可空一項讓 ledger 自動平衡</p>
                     </section>
@@ -104,7 +116,141 @@
                 <section>
                     <h4>Ledger 基本指令</h4>
                     <section>
-                        <h3>balance</h3>
+                        <h3>balance [Account]</h3>
+                        <p>查看帳戶餘額</p>
+                        <h3>register [Account]</h3>
+                        <p>查看每筆記錄</p>
+                    </section>
+                    <section>
+                        <h3>register</h3>
+                        <pre><code data-trim>
+22-Jun-30 打工                   Assets:Checking                   $2,000        $2,000
+                                 Income:Salary                    $-2,000             0
+22-Jun-30 買衣服                 Expenses:Clothes                    $800          $800
+                                 Assets:Checking                    $-800             0
+22-Jul-05 現金消費               Expenses:Cash                     $1,000        $1,000
+                                 Assets:Checking                  $-1,000             0
+22-Jul-08 餐廳                   Expenses:Restaurant                 $300          $300
+                                 Expenses:Cash                      $-300             0        
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <h4>Ledger 多資產管理</h4>
+                    <section>
+                        <h2>所有資產都只是一種商品（commodity）</h2>
+                        <p>$, TWD, HKD, USD, BTC, 台積電, Cherry黑軸, 錄音介面...</p>
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+2022/06/27 * Opening balance
+    Assets:Savings      = $50,000
+    Assets:USD          = 1000 USD
+    Assets:Crypto:BTC   = 0.01000 BTC
+    Assets:Checking     = $4,000
+    Equity:Opening balance
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>自動取得線上報價</h3>
+                        <a href="https://github.com/lancatlin/ledger-quotes-updater">github: lancatlin/ledger-quotes-updater</a>
+                        <p>資產名稱對應檔：</p>
+                        <pre><code data-trim>
+$:TWD
+USD:TWD=X
+BTC:BTC-USD
+ETH:ETH-USD
+LIKE:LIKE-USD
+台積電:2330.TW
+元大:0050.TW
+                        </code></pre>
+                        <pre><code>./updater -m mapping -p prices.db</code></pre>
+                    </section>
+                    <section>
+                        <p>prices.db</p>
+                        <pre><code data-trim>
+P 2022-07-19 11:49:25 BTC 22138.318000 USD
+P 2022-07-19 11:49:25 ETH 1535.553200 USD
+P 2022-07-19 11:49:25 LIKE 0.001834 USD
+P 2022-07-19 11:49:25 台積電 490.000000 $
+P 2022-07-19 11:49:25 元大 5.960000 $
+P 2022-07-19 11:49:25 USD 29.928000 $
+                        </code></pre>
+                    </section>
+                    <section data-markdown>
+                        ### 將所有資產轉換成一種商品顯示
+                        ```
+                        ledger -X $ balance
+                        ```
+                        ```
+Assets                  100.00%             $91,818    
+  Checking                4.57%              $4,200    
+  Crypto                 13.53%             $12,426    
+    BTC                  52.94%              $6,578    
+    LIKE                 47.06%              $5,848    
+  Savings                32.67%             $30,000    
+  Stocks                 23.14%             $21,250    
+    元大                 53.79%             $11,430    
+    台積電               46.21%              $9,820    
+  USD                    26.08%             $23,942    
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ### BTC 本位？
+                        ```
+                        ledger -X BTC balance
+                        ```
+                        ```
+Assets                  100.00%         0.13278 BTC
+  Checking                4.55%         0.00603 BTC
+  Crypto                 13.78%         0.01829 BTC
+    BTC                  54.66%         0.01000 BTC
+    LIKE                 45.34%         0.00829 BTC
+  Savings                32.46%         0.04311 BTC
+  Stocks                 23.35%         0.03100 BTC
+    元大                 53.70%         0.01665 BTC
+    台積電               46.30%         0.01435 BTC
+  USD                    25.86%         0.03434 BTC
+                        ```
+                    </section>
+                    <section data-markdown>
+                        ### 當熊市來臨時…
+                        BTC: 60000 USD 
+                        ```
+                        Assets                  100.00%         0.05767 BTC
+                        ```
+                        BTC: 20000 USD
+                        ```
+                        Assets                  100.00%         0.13278 BTC
+                        ```
+                        投資報酬率 **230%**
+                    </section>
+                    <section>
+                        <h3>Swap!</h3>
+                        <pre><code data-trim>
+2022/07/10 * LikeCoin 什麼時候才要漲
+    Assets:Crypto:LIKE      100,000 LIKE @ 0.002 USD
+    ; 用一顆 LIKE 0.002 USD 的價格買 100,000 顆
+    Assets:USD
+                        </code></pre>
+                    </section>
+                    <section data-markdown>
+                        ### 記錄 Swap 損益
+                        ```
+2022/09/10 * LikeCoin 在 NFT 升級後一定會大漲 10 倍
+    Assets:Crypto:LIKE      -50,000 LIKE {0.002 USD} @ 0.02 USD
+    ; 用 0.002 USD 買入，用 0.02 賣出
+    Assets:USD              1000 USD
+    Income:Gains
+                        ```
+                        ```
+                        ledger reg
+                        ```
+                        ```
+Assets:Crypto:LIKE    -50,000 LIKE
+Assets:USD                1000 USD
+Income:Gains              -900 USD
+                        ```
                     </section>
                 </section>
             </div>
@@ -121,8 +267,8 @@
             Reveal.initialize({
                             hash: true,
 
-                            // Learn about plugins: https://revealjs.com/plugins/
-                            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+                            // Learn about plugins: https://revealjs.com/plugins/ RevealHighlight, 
+                            plugins: [ RevealMarkdown, RevealNotes ]
                         });
         </script>
     </body>

@@ -1,0 +1,38 @@
+2022/05/01 Opening Balance
+    Assets:Savings      $100000
+    Equity:Opening Balance
+
+2022/05/15 Buy
+    Assets:LIKE         10000 LIKE @ $0.2 
+    Assets:Savings
+
+2022/05/18 Buy
+    Assets:LIKE         5000 LIKE @ $0.15
+    Assets:Savings
+
+2022/05/31 Staking Income
+    Assets:LIKE         100 LIKE
+    Income:Staking
+
+2022/06/02 Sell
+    Assets:LIKE         -5000 LIKE {$0.18211920529801} @ $0.3
+    Assets:Savings      $1000
+    Income:Gains
+
+2022/06/10 Buy
+    Assets:LIKE         10000 LIKE @ $0.3
+    Assets:Savings
+
+2022/06/15 Sell
+    Assets:LIKE         -20100 LIKE {$0.24076636684129104478} @ $0.3
+    Assets:Savings      (20100 * 0.3$)
+    Income:Gains
+
+2022/06/30 Buy
+    Assets:LIKE         5000 LIKE @ $0.3
+    Assets:Savings
+
+2022/07/05 Buy
+    Assets:LIKE         5000 LIKE @ $0.4
+    Assets:Savings
+
