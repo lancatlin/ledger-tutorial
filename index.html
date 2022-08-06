@@ -12,22 +12,48 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+        <style>
+            #body {
+                background:url( './img/bg.png' ) !!important;
+                background-size:cover;
+                /* the following are for firefox 70 */
+                opacity:1;
+                z-index:1;
+            }
+            @media print {
+                .backgrounds {
+                    background:url('./img/bg.png');
+                    /* if you used "cover" on screen,
+                     * you will probably want "contains" on print */
+                    background-size:contain;
+                }
+            }
+        </style>
 	</head>
-	<body>
+	<body id="body">
 		<div class="reveal">
 			<div class="slides">
-				<section>
-                    <h1>Ledger-CLI</h1>
-                    <h2 class="r-fit-text">用極簡記帳捶破資本主義高牆</h2>
+				<section data-background-image="./img/cover_new.png">
                 </section>
-                <section data-markdown>
-                    * 為什麼使用 Ledger？
-                    * 複式記帳
-                    * Ledger 基礎
-                    * Ledger 整合多資產
-                    * Ledger 如何改變你的金錢觀
+                <section data-background-image="./img/bg.png">
+                    <section>
+                        <h3>林宏信</h3>
+                        <ul>
+                            <li>不小心念了奇怪科系的五專生</li>
+                            <li>區塊鏈公司打工的後端工程師</li>
+                            <li>推廣自由軟體</li>
+                            <li>經營五年的 Blog: <a href="https://wancat.cc">wancat.cc</a></li>
+                        </ul>
+                    </section>
+                    <section data-markdown>
+                        * 為什麼使用 Ledger？
+                        * 複式記帳
+                        * Ledger 基礎
+                        * Ledger 整合多資產
+                        * Ledger 如何改變你的金錢觀
+                    </section>
                 </section>
-                <section>
+                <section data-background-image="./img/bg.png">
                     <h4>Why Ledger</h4>
                     <section>
                         <h3>市面上的記帳軟體</h3>
@@ -39,7 +65,7 @@
                             <li><strong>記帳太繁瑣，無法堅持</strong></li>
                         </ul>
                     </section>
-                    <section>
+                    <section data-background-image="./img/bg.png">
                         <h3>Ledger CLI</h3>
                         <p><a href="https://www.ledger-cli.org/">ledger-cli.org</a></p>
                         <ul>
@@ -63,7 +89,7 @@
                         </ul>
                     </section>
                 </section>
-                <section>
+                <section data-background-image="./img/bg.png">
                     <h4>複式記帳</h4>
                     <section>
                         <h3>Double-Entry Bookkeeping</h3>
@@ -107,7 +133,7 @@
                         <p>可空一項讓 ledger 自動平衡</p>
                     </section>
                 </section>
-                <section>
+                <section data-background-image="./img/bg.png">
                     <h4>Ledger 基礎</h4>
                     <section>
                         <h3>balance [Account]</h3>
@@ -175,7 +201,7 @@ Expenses:Orphan                    $ 200
 ```
                     </section>
                 </section>
-                <section>
+                <section data-background-image="./img/bg.png">
                     <h4>Ledger 多資產管理</h4>
                     <section>
                         <h2>所有資產都只是一種商品（commodity）</h2>
@@ -293,7 +319,7 @@ Income:Gains              -900 USD
                         ```
                     </section>
                 </section>
-                <section>
+                <section data-background-image="./img/bg.png">
                     <h4>Ledger 如何改變你的金錢觀</h4>
                     <section>
                         <h3>Expenses vs Investment</h3>
@@ -363,7 +389,7 @@ Income:Gains              -900 USD
                         ```
                     </section>
                 </section>
-                <section>
+                <section data-background-image="./img/bg.png">
                     <section data-markdown>
                         累積真正的資產
 
