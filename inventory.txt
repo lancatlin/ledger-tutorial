@@ -1,0 +1,25 @@
+commodity BTC
+    format 1,000.00000 BTC
+
+2022/06/27 * Opening balance
+    Assets:Savings      = $100,000
+    Assets:Checking     = $4,000
+    Equity:Opening balance
+
+2022/09/10 * TLM103
+    ; 麥克風
+    Inventory:Recording         1 "TLM103" @ $ 26500
+    Assets:Savings
+
+2022/09/01 Roland FA-06
+    ; 合成器
+    Inventory:Recording         1 "FA-06" @ $ 27000
+    Assets:Savings
+
+2022/09/29 Home Gym
+    Inventory:HomeGym           1 "REP AB3000" @@ $ 5000 ; 健身椅
+    Inventory:HomeGym           2 "NUO 232" @@ $ 15000 ; 可調式啞鈴
+    Inventory:HomeGym           20 地墊 @ $ 220
+    Expenses:Fees               $ 15
+    Assets:Savings              $ -24415
+

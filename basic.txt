@@ -1,0 +1,24 @@
+2022/06/27 * Opening balance
+    Assets:Savings      = $50,000
+    Assets:Checking     = $4,000
+    Equity:Opening balance
+
+2022/06/30 * 打工
+    Assets:Checking     $2,000
+    Income:Salary
+
+2022/06/30 * 買衣服
+    Expenses:Clothes    $800
+    Assets:Checking
+
+2022/07/05 * 現金消費
+    Expenses:Cash       $1000
+    Assets:Checking
+
+2022/07/08 * 餐廳
+    Expenses:Restaurant     $200
+    Expenses:Cash
+
+2022/07/09 * 對帳
+    Assets:Checking     = $4000
+    Expenses:Orphan

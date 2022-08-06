@@ -1,0 +1,29 @@
+commodity BTC
+    format 1,000.00000 BTC
+
+2022/06/27 * Opening balance
+    Assets:Savings      = $50,000
+    Assets:Checking     = $4,000
+    Assets:USD          = 1000 USD
+    Assets:Crypto:BTC   = 0.01000 BTC
+    Equity:Opening balance
+
+2022/07/10 * LikeCoin
+    Assets:Crypto:LIKE      100,000 LIKE @ 0.002 USD
+    ; 用一顆 LIKE 0.002 USD 的價格買 100,000 顆
+    Assets:USD
+
+2022/07/11 * 台積電
+    Assets:Stocks:台積電    20 台積電 @@ $10000 ; 一股 $500
+    Assets:Savings
+
+2022/07/11 * 元大
+    Assets:Stocks:元大      100 元大 @@ $10000 ; 一股 $100
+    Assets:Savings
+
+2022/09/10 * LikeCoin 在 NFT 升級後一定會大漲 10 倍
+    Assets:Crypto:LIKE      -50,000 LIKE {0.002 USD} @ 0.02 USD
+    ; 用 0.002 USD 買入，用 0.02 賣出
+    Assets:USD              1000 USD
+    Income:Gains
+
