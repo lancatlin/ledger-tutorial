@@ -12,23 +12,6 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-        <style>
-            #body {
-                background:url( './img/bg.png' ) !!important;
-                background-size:cover;
-                /* the following are for firefox 70 */
-                opacity:1;
-                z-index:1;
-            }
-            @media print {
-                .backgrounds {
-                    background:url('./img/bg.png');
-                    /* if you used "cover" on screen,
-                     * you will probably want "contains" on print */
-                    background-size:contain;
-                }
-            }
-        </style>
 	</head>
 	<body id="body">
 		<div class="reveal">
@@ -46,7 +29,7 @@
                         </ul>
                     </section>
                     <section data-markdown>
-                        * 為什麼使用 Ledger？
+                        * Why Ledger？
                         * 複式記帳
                         * Ledger 基礎
                         * Ledger 整合多資產
@@ -55,6 +38,13 @@
                 </section>
                 <section data-background-image="./img/bg.png">
                     <h4>Why Ledger</h4>
+                    <section><h1>Why Ledger</h1></section>
+                    <section data-markdown>
+                        ### 為什麼要記帳？
+
+                        * 遊戲看重播
+                        * 記帳方式決定你的金錢觀
+                    </section>
                     <section>
                         <h3>市面上的記帳軟體</h3>
                         <ul>
@@ -91,27 +81,40 @@
                 </section>
                 <section data-background-image="./img/bg.png">
                     <h4>複式記帳</h4>
+                    <section><h1>複式記帳</h1></section>
+                    <section data-markdown>
+                        ### 悠遊卡要怎麼記帳？
+                        儲值是收入還是支出？
+                    </section>
+                    <section>
+                        <br>
+                        <h3>現金流</h3>
+                        <img class="r-stretch" data-src="img/cashflow-1.png" />
+                    </section>
+                    <section>
+                        <br>
+                        <h3>悠遊卡的現金流</h3>
+                        <img class="r-stretch" data-src="img/cashflow-2.png" />
+                    </section>
                     <section>
                         <h3>Double-Entry Bookkeeping</h3>
                         <h3>複式簿記</h3>
-                        <p>不只是「收入」和「支出」</p>
-                        <p class='r-fit-text fragment'>記錄「金錢的流動」</p>
+                        <p class='r-fit-text'>記錄「現金流」的記帳方法</p>
                     </section>
                     <section>
                         <p>任一筆交易，都是兩個帳戶之間的轉移</p>
                         <p>全部的淨值加總<strong>必須為 0</strong></p>
                         <p>表現更複雜的資產流動</p>
-                        <p>ex: 買賣股票</p>
-                        <p>不能單純的歸類為收入/支出</p>
-                        <p>進而影響投資心態</p>
                     </section>
                     <section>
-                        <h3>帳戶慣例（如 GNU Cash）</h3>
-                        <p> Assets - Liabilities<strong class="fragment" data-fragment-index="1"> + Income - Expenses</strong> = Equity
-                        <h3 class="fragment" data-fragment-index="2">Ledger</h3>
-                        <p class="fragment" data-fragment-index="2">Assets + <mark>Liabilities</mark> + <mark>Income</mark> + Expenses + <mark>Equity</mark> = 0
-                        <p class="fragment" data-fragment-index="2"><mark>黃字</mark>代表錢流出到其他帳戶，為負號</p>
+                        <br>
+                        <h3>帳戶慣例</h3>
+                        <img class="r-stretch" data-src="img/cashflow-3.png" />
                     </section>
+                </section>
+                <section data-background-image="./img/bg.png">
+                    <h4>Ledger 基礎</h4>
+                    <section><h1>Ledger 基礎</h1></section>
                     <section>
                         <p>Ledger 完全不會更動你的帳本</p>
                         <p>簡單的格式，用任何的文字編輯器都可以記帳</p>
@@ -132,9 +135,6 @@
                         </code></pre>
                         <p>可空一項讓 ledger 自動平衡</p>
                     </section>
-                </section>
-                <section data-background-image="./img/bg.png">
-                    <h4>Ledger 基礎</h4>
                     <section>
                         <h3>balance [Account]</h3>
                         <p>查看帳戶餘額</p>
@@ -187,6 +187,7 @@ Expenses:Orphan                    $ 200
                 </section>
                 <section data-background-image="./img/bg.png">
                     <h4>Ledger 多資產管理</h4>
+                    <section><h1 class="r-fit-text">Ledger 多資產管理</h1></section>
                     <section>
                         <h2>所有資產都只是一種商品（commodity）</h2>
                         <p>$, TWD, HKD, USD, BTC, 台積電, Cherry黑軸, 錄音介面...</p>
@@ -356,8 +357,6 @@ Income:Gains              -900 USD
                         累積真正的資產
 
                         離開資本的輪迴
-
-                        Thank you for listening!
                     </section>
                     <section data-markdown>
                         ### 附錄
@@ -366,6 +365,8 @@ Income:Gains              -900 USD
                         * [自動線上報價腳本](https://github.com/lancatlin/ledger-quotes-updater)
                         * [Ledger 官網](https://www.ledger-cli.org/)
                         * [Ledger Manual](https://www.ledger-cli.org/3.0/doc/ledger3.html)
+
+                        Thank you for listening!
                     </section>
                 </section>
             </div>
@@ -382,7 +383,6 @@ Income:Gains              -900 USD
             // - https://revealjs.com/config/
             Reveal.initialize({
                             hash: true,
-                            margin: 0.04,
 
                             slideNumber: 'c/t',
                             // Learn about plugins: https://revealjs.com/plugins/ RevealHighlight, 
