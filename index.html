@@ -141,31 +141,15 @@
                         <h3>register [Account]</h3>
                         <p>查看每筆記錄</p>
                     </section>
-                    <section data-markdown>
-                        ### balance
-```
-  $ 54,200  Assets
-   $ 4,200    Checking
-  $ 50,000    Savings
- $ -54,000  Equity:Opening balance
-   $ 1,800  Expenses
-   $ 1,000    Cash
-     $ 800    Clothes
-  $ -2,000  Income:Salary
-```
+                    <section>
+                        <br>
+                        <p>balance 查看帳戶餘額</p>
+                        <img class="r-stretch" data-src="img/balance.gif" />
                     </section>
                     <section>
+                        <br>
                         <h3>register</h3>
-                        <pre><code data-trim>
-22-Jun-30 打工                   Assets:Checking                   $2,000        $2,000
-                                 Income:Salary                    $-2,000             0
-22-Jun-30 買衣服                 Expenses:Clothes                    $800          $800
-                                 Assets:Checking                    $-800             0
-22-Jul-05 現金消費               Expenses:Cash                     $1,000        $1,000
-                                 Assets:Checking                  $-1,000             0
-22-Jul-08 餐廳                   Expenses:Restaurant                 $200          $200
-                                 Expenses:Cash                      $-200             0        
-                        </code></pre>
+                        <img class="r-stretch" data-src="img/register.gif" />
                     </section>
                     <section>
                         <h3>如何在手機上記帳</h3>
@@ -218,19 +202,10 @@ Expenses:Orphan                    $ 200
                         </code></pre>
                     </section>
                     <section>
-                        <h3>自動取得線上報價</h3>
+                        <br>
+                        <p>自動取得線上報價</p>
                         <a href="https://github.com/lancatlin/ledger-quotes-updater">github: lancatlin/ledger-quotes-updater</a>
-                        <p>資產名稱對應檔：</p>
-                        <pre><code data-trim>
-$:TWD
-USD:TWD=X
-BTC:BTC-USD
-ETH:ETH-USD
-LIKE:LIKE-USD
-台積電:2330.TW
-元大:0050.TW
-                        </code></pre>
-                        <pre><code>./updater -m mapping -p prices.db</code></pre>
+                        <img class="r-stretch" data-src="img/price.gif" />
                     </section>
                     <section>
                         <p>prices.db</p>
@@ -243,23 +218,10 @@ P 2022-07-20 09:54:45 USD 29.876000 $
 P 2022-07-20 09:54:45 BTC 23295.271000 USD
                         </code></pre>
                     </section>
-                    <section data-markdown>
-                        ### 將所有資產轉換成一種商品顯示
-                        ```
-                        ledger -X $ balance
-                        ```
-                        ```
-Assets                  100.00%             $91,818    
-  Checking                4.57%              $4,200    
-  Crypto                 13.53%             $12,426    
-    BTC                  52.94%              $6,578    
-    LIKE                 47.06%              $5,848    
-  Savings                32.67%             $30,000    
-  Stocks                 23.14%             $21,250    
-    元大                 53.79%             $11,430    
-    台積電               46.21%              $9,820    
-  USD                    26.08%             $23,942    
-                        ```
+                    <section>
+                        <br>
+                        <h3>將所有資產轉換成一種商品顯示</h3>
+                        <img class="r-stretch" data-src="img/exchange.gif"/>
                     </section>
                     <section data-markdown>
                         ### BTC 本位？
@@ -420,6 +382,7 @@ Income:Gains              -900 USD
             // - https://revealjs.com/config/
             Reveal.initialize({
                             hash: true,
+                            margin: 0.04,
 
                             slideNumber: 'c/t',
                             // Learn about plugins: https://revealjs.com/plugins/ RevealHighlight, 
