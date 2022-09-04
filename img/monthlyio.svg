@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"  standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg 
+ width="1280" height="720" 
+ viewBox="0 0 1280 720"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>Gnuplot</title>
+<desc>Produced by GNUPLOT 4.6 patchlevel 5 </desc>
+
+<g id="gnuplot_canvas">
+
+<rect x="0" y="0" width="1280" height="720" fill="none"/>
+<defs>
+
+	<circle id='gpDot' r='0.5' stroke-width='0.5'/>
+	<path id='gpPt0' stroke-width='0.222' stroke='currentColor' d='M-1,0 h2 M0,-1 v2'/>
+	<path id='gpPt1' stroke-width='0.222' stroke='currentColor' d='M-1,-1 L1,1 M1,-1 L-1,1'/>
+	<path id='gpPt2' stroke-width='0.222' stroke='currentColor' d='M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1'/>
+	<rect id='gpPt3' stroke-width='0.222' stroke='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<rect id='gpPt4' stroke-width='0.222' stroke='currentColor' fill='currentColor' x='-1' y='-1' width='2' height='2'/>
+	<circle id='gpPt5' stroke-width='0.222' stroke='currentColor' cx='0' cy='0' r='1'/>
+	<use xlink:href='#gpPt5' id='gpPt6' fill='currentColor' stroke='none'/>
+	<path id='gpPt7' stroke-width='0.222' stroke='currentColor' d='M0,-1.33 L-1.33,0.67 L1.33,0.67 z'/>
+	<use xlink:href='#gpPt7' id='gpPt8' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt7' id='gpPt9' stroke='currentColor' transform='rotate(180)'/>
+	<use xlink:href='#gpPt9' id='gpPt10' fill='currentColor' stroke='none'/>
+	<use xlink:href='#gpPt3' id='gpPt11' stroke='currentColor' transform='rotate(45)'/>
+	<use xlink:href='#gpPt11' id='gpPt12' fill='currentColor' stroke='none'/>
+</defs>
+<g style="fill:none; color:white; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M88.5,684.0 L1255.0,684.0  '/></g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M88.5,684.0 M1255.0,684.0  '/>	<g transform="translate(80.2,688.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:end">
+		<text></text>
+	</g>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M88.5,684.0 L1255.0,684.0  '/></g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M88.5,684.0 M1255.0,684.0  '/></g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M88.5,558.0 L1255.0,558.0  '/></g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M88.5,558.0 M1255.0,558.0  '/>	<g transform="translate(80.2,562.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:end">
+		<text> 00000</text>
+	</g>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M88.5,432.0 L1255.0,432.0  '/></g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M88.5,432.0 M1255.0,432.0  '/>	<g transform="translate(80.2,436.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:end">
+		<text> 00000</text>
+	</g>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M88.5,306.1 L1255.0,306.1  '/></g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M88.5,306.1 M1255.0,306.1  '/>	<g transform="translate(80.2,310.6)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:end">
+		<text> 00000</text>
+	</g>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M88.5,180.1 L1255.0,180.1  '/></g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M88.5,180.1 M1255.0,180.1  '/>	<g transform="translate(80.2,184.6)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:end">
+		<text> 00000</text>
+	</g>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='gray' stroke-dasharray=' 2,4' class="gridline"  d='M88.5,54.1 L1255.0,54.1  '/></g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M88.5,54.1 M1255.0,54.1  '/>	<g transform="translate(80.2,58.6)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:end">
+		<text> 00000</text>
+	</g>
+	<path stroke='black'  d='M178.2,684.0  '/>	<g transform="translate(178.2,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Jan</text>
+	</g>
+	<path stroke='black'  d='M268.0,684.0  '/>	<g transform="translate(268.0,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Feb</text>
+	</g>
+	<path stroke='black'  d='M357.7,684.0  '/>	<g transform="translate(357.7,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Mar</text>
+	</g>
+	<path stroke='black'  d='M447.4,684.0  '/>	<g transform="translate(447.4,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Apr</text>
+	</g>
+	<path stroke='black'  d='M537.2,684.0  '/>	<g transform="translate(537.2,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>May</text>
+	</g>
+	<path stroke='black'  d='M626.9,684.0  '/>	<g transform="translate(626.9,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Jun</text>
+	</g>
+	<path stroke='black'  d='M716.6,684.0  '/>	<g transform="translate(716.6,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Jul</text>
+	</g>
+	<path stroke='black'  d='M806.3,684.0  '/>	<g transform="translate(806.3,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Aug</text>
+	</g>
+	<path stroke='black'  d='M896.1,684.0  '/>	<g transform="translate(896.1,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Sep</text>
+	</g>
+	<path stroke='black'  d='M985.8,684.0  '/>	<g transform="translate(985.8,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Oct</text>
+	</g>
+	<path stroke='black'  d='M1075.5,684.0  '/>	<g transform="translate(1075.5,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Nov</text>
+	</g>
+	<path stroke='black'  d='M1165.3,684.0  '/>	<g transform="translate(1165.3,706.5)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Dec</text>
+	</g>
+	<path stroke='black'  d='M88.5,54.1 M88.5,684.0 L1255.0,684.0 M1255.0,54.1 M88.5,54.1  '/>	<g transform="translate(17.6,369.1) rotate(270)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Amount</text>
+	</g>
+	<g transform="translate(671.7,31.6)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:middle">
+		<text>Monthly Income and Expenses</text>
+	</g>
+</g>
+	<g id="gnuplot_plot_1" ><title>gnuplot_plot_1</title>
+<g style="fill:none; color:red; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1187.9,76.6)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:end">
+		<text>Income</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '1196.2,76.6 1238.4,76.6 1238.4,67.6 1196.2,67.6 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '148.3,684.0 178.3,684.0 178.3,555.1 148.3,555.1 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '238.1,684.0 268.1,684.0 268.1,225.2 238.1,225.2 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '327.8,684.0 357.8,684.0 357.8,560.1 327.8,560.1 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '417.5,684.0 447.5,684.0 447.5,437.7 417.5,437.7 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '507.2,684.0 537.3,684.0 537.3,424.8 507.2,424.8 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '597.0,684.0 627.0,684.0 627.0,68.8 597.0,68.8 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '686.7,684.0 716.7,684.0 716.7,508.7 686.7,508.7 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '776.4,684.0 806.4,684.0 806.4,509.2 776.4,509.2 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '866.2,684.0 896.2,684.0 896.2,413.2 866.2,413.2 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '955.9,684.0 985.9,684.0 985.9,615.0 955.9,615.0 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '1045.6,684.0 1075.6,684.0 1075.6,497.9 1045.6,497.9 '/>
+		<polygon fill = 'rgb(255, 160, 112)' fill-opacity = '0.400000' points = '1135.4,684.0 1165.4,684.0 1165.4,503.7 1135.4,503.7 '/>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_2" ><title>gnuplot_plot_2</title>
+<g style="fill:none; color:green; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(148.0,546.2) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(237.8,216.3) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(327.5,551.2) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(417.2,428.8) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(507.0,415.9) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(596.7,59.9) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(686.4,499.8) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(776.1,500.3) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(865.9,404.3) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(955.6,606.1) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(1045.3,489.0) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(1135.1,494.8) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_3" ><title>gnuplot_plot_3</title>
+<g style="fill:none; color:blue; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(1187.9,94.6)" style="stroke:none; fill:black; font-family:(null); font-size:12.00pt; text-anchor:end">
+		<text>Expenses</text>
+	</g>
+	<g style = 'stroke:none; shape-rendering:crispEdges'>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '1196.2,94.6 1238.4,94.6 1238.4,85.6 1196.2,85.6 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '178.2,684.0 208.2,684.0 208.2,560.5 178.2,560.5 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '268.0,684.0 298.0,684.0 298.0,660.5 268.0,660.5 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '357.7,684.0 387.7,684.0 387.7,638.1 357.7,638.1 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '447.4,684.0 477.4,684.0 477.4,503.3 447.4,503.3 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '537.2,684.0 567.2,684.0 567.2,591.8 537.2,591.8 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '626.9,684.0 656.9,684.0 656.9,639.6 626.9,639.6 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '716.6,684.0 746.6,684.0 746.6,593.9 716.6,593.9 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '806.3,684.0 836.4,684.0 836.4,577.7 806.3,577.7 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '896.1,684.0 926.1,684.0 926.1,597.6 896.1,597.6 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '985.8,684.0 1015.8,684.0 1015.8,558.2 985.8,558.2 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '1075.5,684.0 1105.5,684.0 1105.5,547.9 1075.5,547.9 '/>
+		<polygon fill = 'rgb(144, 238, 144)' fill-opacity = '0.400000' points = '1165.3,684.0 1195.3,684.0 1195.3,632.7 1165.3,632.7 '/>
+	</g>
+</g>
+	</g>
+	<g id="gnuplot_plot_4" ><title>gnuplot_plot_4</title>
+<g style="fill:none; color:cyan; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<g transform="translate(181.2,551.6) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(271.0,651.6) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(360.7,629.2) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(450.4,494.4) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(540.2,582.9) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(629.9,630.7) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(719.6,585.0) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(809.3,568.8) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(899.1,588.7) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(988.8,549.3) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(1078.5,539.0) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+	<g transform="translate(1168.3,623.8) rotate(-15)" style="stroke:none; fill:gray; font-family:Courier; font-size:8.00pt; text-anchor:start">
+		<text>0000.00</text>
+	</g>
+</g>
+	</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00; stroke-linecap:butt; stroke-linejoin:miter">
+	<path stroke='black'  d='M88.5,684.0 L1255.0,684.0 M1255.0,54.1 M88.5,54.1  '/></g>
+</g>
+</svg>
+
